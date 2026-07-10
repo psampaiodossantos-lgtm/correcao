@@ -1,0 +1,25 @@
+Arquivos modificados pelo Copilot - correcoes mínimas
+Data: 2026-07-10
+
+Resumo:
+Foram feitas correções mínimas mantendo nomes e formatos originais dos arquivos (linguagem nativa do mod). Nenhuma alteração foi feita em arquivos de formato diferente do original.
+
+Lista de arquivos modificados e localizações (relativas à raiz do repositório 'correcao'):
+
+1) files/aqui/windowcontrol.lua
+   - Tipo: Lua (.lua)
+   - Descrição da correção: Ajuste das chaves electrics para usar sdd_g82_glass_L / sdd_g82_glass_R (corrigindo mismatch com sdd_g80), proteção contra electrics nil, correção do cálculo de core_sounds.cabinFilterStrength e atualização dos caminhos dos SFX para /vehicles/sdd_g82/sounds/...
+
+2) files/aqui/doorHandle.lua
+   - Tipo: Lua (.lua)
+   - Descrição da correção: Correção mínima para tolerar a ausência do valor do coupler nas electrics (fallback para existência do controller), proteção ao chamar controllers (getLockState/toggleGroup), mantendo o mesmo nome e formato de arquivo.
+
+Observações:
+- Não foram adicionados comandos novos para acender a luz do porta-malas (trunk light). Você pediu para não adicionar tais comandos; portanto, não foi feita nenhuma modificação nesse comportamento.
+- Caso queira que eu corrija especificamente o comportamento das luzes do porta-malas (já existentes), diga qual arquivo ou comportamento deseja que eu revise — posso inspecionar os JBEAMs e interações e aplicar apenas a correção mínima necessária (mantendo novamente o mesmo formato/nome).
+
+Link para os arquivos no repositório (main branch):
+- https://github.com/psampaiodossantos-lgtm/correcao/blob/main/files/aqui/windowcontrol.lua
+- https://github.com/psampaiodossantos-lgtm/correcao/blob/main/files/aqui/doorHandle.lua
+
+Se quiser, eu gero também um diff em texto para revisão antes de qualquer outro commit. Deseja o diff dos arquivos modificados agora?
